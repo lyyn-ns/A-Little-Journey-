@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Journey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="scene intro-scene active" id="intro">
+
+    <div class="aurora">
+        <div class="aurora-band aurora-one"></div>
+        <div class="aurora-band aurora-two"></div>
+        <div class="aurora-band aurora-three"></div>
+    </div>
+
+    <div class="stars">
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+    </div>
+
+    <div class="intro-copy">
+
+        <p class="tiny-title">
+            A QUIET LITTLE JOURNEY
+        </p>
+
+        <h1>
+            A Little Journey
+        </h1>
+
+        <p>
+            Sometimes, we don't really know what we're feeling.
+        </p>
+
+        <p>
+            Take a little walk through these rooms,<br>
+            and see what your heart has been quietly carrying.
+        </p>
+
+    </div>
+
+    <div class="intro-house">
+
+        <div class="house-roof"></div>
+
+        <div class="house-body">
+
+            <div class="house-window left"></div>
+            <div class="house-window right"></div>
+
+            <button
+                class="intro-door"
+                id="beginDoor"
+                aria-label="Enter the house"
+            >
+                <span class="door-light"></span>
+                <span class="door-knob"></span>
+            </button>
+
+        </div>
+
+        <p class="simple-hint intro-hint">
+            come inside ♡
+        </p>
+
+    </div>
+
+    <div class="intro-ground"></div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM 01
+===================================================== -->
+
+<section class="scene room room-one" id="room1">
+
+    <div class="room-label">
+        ROOM 01
+    </div>
+
+    <div class="r1-window">
+
+        <div class="r1-sky">
+
+            <div class="moon"></div>
+
+            <span class="small-star s1">✦</span>
+            <span class="small-star s2">·</span>
+            <span class="small-star s3">✧</span>
+
+        </div>
+
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+
+    </div>
+
+    <div class="desk">
+
+        <div class="lamp">
+            <div class="lamp-head"></div>
+            <div class="lamp-neck"></div>
+            <div class="lamp-base"></div>
+        </div>
+
+        <button
+            class="journal"
+            id="room1Trigger"
+            aria-label="Open the journal"
+        >
+
+            <span class="journal-shadow"></span>
+
+            <span class="journal-pages">
+
+                <span class="journal-page left-page">
+                    <span class="writing-lines"></span>
+                </span>
+
+                <span class="journal-page right-page">
+                    <span class="writing-lines"></span>
+                </span>
+
+                <span class="journal-crease"></span>
+
+            </span>
+
+            <span class="journal-cover">
+                <span class="cover-border"></span>
+                <span class="cover-star">✦</span>
+            </span>
+
+            <span class="journal-ribbon"></span>
+
+        </button>
+
+        <p
+            class="book-hint simple-hint"
+            id="bookHint"
+        >
+            open me ♡
+        </p>
+
+        <div class="desk-plant">
+
+            <div class="plant-pot"></div>
+
+            <span class="plant-leaf leaf-a"></span>
+            <span class="plant-leaf leaf-b"></span>
+            <span class="plant-leaf leaf-c"></span>
+
+        </div>
+
+    </div>
+
+    <div class="question-card" id="question1">
+
+        <p class="question-number">
+            ROOM 01
+        </p>
+
+        <h2>
+            When everything around you finally becomes quiet,
+            where does your mind usually wander?
+        </h2>
+
+        <div class="answers">
+
+            <button data-emotion="sad">
+                Things that happened in the past.
+            </button>
+
+            <button data-emotion="happy">
+                Things I'm looking forward to.
+            </button>
+
+            <button data-emotion="lost">
+                Things I wish I could figure out.
+            </button>
+
+            <button data-emotion="love">
+                Someone who keeps crossing my mind.
+            </button>
+
+            <button data-emotion="upset">
+                Everything I've been holding in lately.
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="floating-dust">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM 02
+===================================================== -->
+
+<section class="scene room room-two" id="room2">
+
+    <div class="room-label">
+        ROOM 02
+    </div>
+
+    <div class="arch-window-wrap">
+
+        <div class="outside-view">
+
+            <span class="sun-glow"></span>
+
+            <span class="distant-hill hill-one"></span>
+            <span class="distant-hill hill-two"></span>
+
+            <span class="window-tree"></span>
+
+            <span class="falling-leaf leaf-one">●</span>
+            <span class="falling-leaf leaf-two">●</span>
+            <span class="falling-leaf leaf-three">●</span>
+
+        </div>
+
+        <button
+            class="window-panel window-panel-left"
+            id="room2Trigger"
+            aria-label="Open the window"
+        >
+            <span class="panel-cross vertical"></span>
+            <span class="panel-cross horizontal"></span>
+        </button>
+
+        <button
+            class="window-panel window-panel-right"
+            id="room2TriggerRight"
+            aria-label="Open the window"
+        >
+            <span class="panel-cross vertical"></span>
+            <span class="panel-cross horizontal"></span>
+        </button>
+
+        <div class="arch-outline"></div>
+
+        <p
+            class="simple-hint window-hint"
+            id="windowHint"
+        >
+            open the window ♡
+        </p>
+
+    </div>
+
+    <div class="floor-light"></div>
+
+    <div class="question-card" id="question2">
+
+        <p class="question-number">
+            ROOM 02
+        </p>
+
+        <h2>
+            If you could see your life from outside this window,
+            what would it look like right now?
+        </h2>
+
+        <div class="answers">
+
+            <button data-emotion="sad">
+                A little cloudy, but I'm getting through it.
+            </button>
+
+            <button data-emotion="happy">
+                Bright, warm, and peaceful.
+            </button>
+
+            <button data-emotion="lost">
+                Like I'm somewhere unfamiliar and don't know which way to go.
+            </button>
+
+            <button data-emotion="upset">
+                A little messy… too many things happening at once.
+            </button>
+
+            <button data-emotion="love">
+                Like there's something beautiful waiting for me.
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM 03
+===================================================== -->
+
+<section class="scene room room-three" id="room3">
+
+    <div class="room-label">
+        ROOM 03
+    </div>
+
+    <div class="garden-sky"></div>
+
+    <div class="garden-path"></div>
+
+    <div class="garden-bush bush-left"></div>
+    <div class="garden-bush bush-right"></div>
+
+    <div class="small-flowers">
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+        <span>✿</span>
+    </div>
+
+    <button
+        class="special-flower"
+        id="room3Trigger"
+        aria-label="Touch the flower"
+    >
+
+        <span class="flower-head">
+
+            <span class="petal petal-top"></span>
+            <span class="petal petal-right"></span>
+            <span class="petal petal-bottom-right"></span>
+            <span class="petal petal-bottom-left"></span>
+            <span class="petal petal-left"></span>
+
+            <span class="flower-center"></span>
+
+        </span>
+
+        <span class="flower-stem"></span>
+
+        <span class="flower-leaf flower-leaf-one"></span>
+        <span class="flower-leaf flower-leaf-two"></span>
+
+    </button>
+
+    <p
+        class="simple-hint flower-hint"
+        id="flowerHint"
+    >
+        touch me ♡
+    </p>
+
+    <div
+        class="released-petals"
+        id="releasedPetals"
+    >
+        <span>❀</span>
+        <span>❀</span>
+        <span>❀</span>
+    </div>
+
+    <div class="question-card" id="question3">
+
+        <p class="question-number">
+            ROOM 03
+        </p>
+
+        <h2>
+            You find a tiny path hidden between the flowers.
+            Where would you want it to lead?
+        </h2>
+
+        <div class="answers">
+
+            <button data-emotion="upset">
+                Somewhere quiet where I can finally rest.
+            </button>
+
+            <button data-emotion="happy">
+                Somewhere I've never been before.
+            </button>
+
+            <button data-emotion="lost">
+                Somewhere I might find an answer.
+            </button>
+
+            <button data-emotion="love">
+                Somewhere I can share the moment with someone special.
+            </button>
+
+            <button data-emotion="sad">
+                Nowhere. I think I'd just sit here for a while.
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM 04
+===================================================== -->
+
+<section class="scene room room-four" id="room4">
+
+    <div class="room-label">
+        ROOM 04
+    </div>
+
+    <div class="warm-wall"></div>
+
+    <div class="evening-window">
+        <div class="evening-sky"></div>
+    </div>
+
+    <div class="tea-table">
+
+        <div class="tiny-vase">
+            <span class="vase-flower">✿</span>
+        </div>
+
+        <div class="tea-cup user-cup">
+            <span class="cup-handle"></span>
+        </div>
+
+        <button
+            class="tea-cup guest-cup"
+            id="room4Trigger"
+            aria-label="Touch the other teacup"
+        >
+
+            <span class="cup-handle"></span>
+
+            <span class="steam steam-one"></span>
+            <span class="steam steam-two"></span>
+
+        </button>
+
+        <p
+            class="simple-hint cup-hint"
+            id="cupHint"
+        >
+            touch this cup ♡
+        </p>
+
+    </div>
+
+    <div class="question-card" id="question4">
+
+        <p class="question-number">
+            ROOM 04
+        </p>
+
+        <h2>
+            Someone is sitting across from you.
+            What would you want them to say?
+        </h2>
+
+        <div class="answers">
+
+            <button data-emotion="upset">
+                “You don't have to carry everything alone.”
+            </button>
+
+            <button data-emotion="happy">
+                “You're doing better than you think.”
+            </button>
+
+            <button data-emotion="sad">
+                “It's okay. You can take your time.”
+            </button>
+
+            <button data-emotion="love">
+                “I'm glad you're here.”
+            </button>
+
+            <button data-emotion="lost">
+                “You will find your way.”
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ROOM 05
+===================================================== -->
+
+<section class="scene room room-five" id="room5">
+
+    <div class="room-label">
+        ROOM 05
+    </div>
+
+    <div class="night-wall"></div>
+
+    <div class="final-stars">
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+    </div>
+
+    <div class="final-door-wrap">
+
+        <div class="door-light-spill"></div>
+
+        <button
+            class="final-door"
+            id="room5Trigger"
+            aria-label="Open the final door"
+        >
+
+            <span class="final-door-panel"></span>
+            <span class="final-knob"></span>
+
+        </button>
+
+        <p
+            class="simple-hint final-door-hint"
+            id="finalDoorHint"
+        >
+            open the door ♡
+        </p>
+
+    </div>
+
+    <div class="question-card" id="question5">
+
+        <p class="question-number">
+            ROOM 05
+        </p>
+
+        <h2>
+            Before you leave this little house,
+            what do you hope you'll find waiting for you outside?
+        </h2>
+
+        <div class="answers">
+
+            <button data-emotion="happy">
+                A reason to smile again.
+            </button>
+
+            <button data-emotion="lost">
+                A clearer path.
+            </button>
+
+            <button data-emotion="sad">
+                A quiet place where my heart can breathe.
+            </button>
+
+            <button data-emotion="love">
+                Someone who feels like home.
+            </button>
+
+            <button data-emotion="upset">
+                The strength to keep going.
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESULT
+===================================================== -->
+
+<section
+    class="scene result-scene"
+    id="resultScene"
+>
+
+    <div class="result-stars">
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+    </div>
+
+    <div class="result-wrap">
+
+        <div
+            class="result-card"
+            id="resultCard"
+        >
+
+            <div class="result-moon"></div>
+
+            <span class="result-decoration deco-one">
+                ✦
+            </span>
+
+            <span class="result-decoration deco-two">
+                ✧
+            </span>
+
+            <p class="result-small">
+                YOUR HEART SEEMS TO BE CARRYING
+            </p>
+
+            <h1 id="resultTitle">
+                A Feeling
+            </h1>
+
+            <p
+                class="result-lead"
+                id="resultLead"
+            ></p>
+
+            <div class="result-divider">
+                ✦
+            </div>
+
+            <div class="verse-box">
+
+                <p
+                    class="verse-reference"
+                    id="verseReference"
+                ></p>
+
+                <p
+                    class="verse-text"
+                    id="verseText"
+                ></p>
+
+            </div>
+
+            <div class="encouragement">
+
+                <p id="encouragementEnglish"></p>
+
+                <div class="language-divider">
+                    ♡
+                </div>
+
+                <p
+                    class="korean"
+                    id="encouragementKorean"
+                ></p>
+
+            </div>
+
+            <p
+                class="mixed-note"
+                id="mixedNote"
+            ></p>
+
+            <p class="result-watermark">
+                lyyn.ns ♡
+            </p>
+
+        </div>
+
+        <div class="result-buttons">
+
+            <button id="restartButton">
+                walk through again ♡
+            </button>
+
+            <button id="downloadCard">
+                save my card
+            </button>
+
+            <button id="shareCard">
+                share ♡
+            </button>
+
+        </div>
+
+        <p
+            class="share-note"
+            id="shareNote"
+        ></p>
+
+    </div>
+
+    <canvas
+        id="cardCanvas"
+        width="1080"
+        height="1500"
+        hidden
+    ></canvas>
+
+    <div class="watermark">
+        lyyn.ns ♡
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
